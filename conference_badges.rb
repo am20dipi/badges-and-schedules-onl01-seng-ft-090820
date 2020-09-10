@@ -15,7 +15,7 @@ def batch_badge_creator(attendees)
   attendees_list
 end
 
-def assign_rooms(room_assignments)
+def assign_rooms(array)
   attendees.each do |name|
     name = badge_maker(name)
     puts name
