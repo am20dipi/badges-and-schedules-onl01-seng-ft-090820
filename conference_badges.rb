@@ -21,7 +21,7 @@ def printer(attendees)
     puts name
   end
   room_assignment = []
-  attendees.each_with_index(1) do |name, index|
+  attendees.each.with_index(1) do |name, index|
     puts "Hello, #{name}! You'll be assigned to room #{index}!"
   end
   room_assignment
