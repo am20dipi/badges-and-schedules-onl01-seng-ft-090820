@@ -20,8 +20,9 @@ def printer(attendees)
     name = badge_maker(name)
     puts name
   end
-  room assignment = []
+  room_assignment = []
   attendees.each_with_index(1) do |name, index|
     puts "Hello, #{name}! You'll be assigned to room #{index}!"
   end
+  room_assignment
 end
