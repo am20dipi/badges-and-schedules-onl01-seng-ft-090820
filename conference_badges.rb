@@ -15,3 +15,13 @@ def batch_badge_creator(attendees)
   attendees_list
 end
 
+def printer(attendees)
+  attendees.each do |name|
+    name = badge_maker(name)
+    puts name
+  end
+  room assignment = []
+  attendees.each_with_index(1) do |name, index|
+    puts "Hello, #{name}! You'll be assigned to room #{index}!"
+  end
+end
