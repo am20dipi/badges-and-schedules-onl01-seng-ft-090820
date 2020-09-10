@@ -1,19 +1,17 @@
 # Write your code here
 attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
-def badge_maker(array)
+def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-badge_maker("Ada")
 
-def batch_badge_creator(array)
-  newarray = []
-  array.each do |name|
-    puts "Hello, my name is #{name}."
-        newarray << name
+def batch_badge_creator(attendees)
+  attendees_list = []
+  attendees.each do |name|
+    name = badge_maker(name)
+    attendees_list.push(name)
   end
-  newarray
+  attendees_list
 end
 
-batch_badge_creator(a)
