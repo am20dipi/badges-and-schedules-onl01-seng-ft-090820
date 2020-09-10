@@ -29,7 +29,7 @@ end
 
 
 
-def printer(attendees)
+def printer(array)
   attendees.each do |name|
     name = badge_maker(name)
     puts name
